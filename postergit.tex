@@ -1,0 +1,88 @@
+\documentclass{beamer}
+
+\usepackage[size=a4,orientation=landscape,scale=1.8]{beamerposter}
+\usetheme{LLT-poster}
+\usecolortheme{ComingClean}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{libertine}
+\usepackage[scaled=0.92]{inconsolata}
+\usepackage[libertine]{newtxmath}
+
+\usepackage{mwe}
+
+\author[bayarsaikhan@student.agh.edu.pl]{Rinchyen Bayarsaikhan}
+\title{Basic Introduction To\\GitHub}
+
+\begin{document}
+\begin{frame}[fragile]
+\begin{columns}[T]
+
+%1st column
+\begin{column}{.33\textwidth}
+
+\begin{block}{What is GitHub ?}
+\item GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
+\end{block}
+
+\begin{block}{The \emph{Git} in the GitHub}
+\item Git is a \textbf{version control} system \\ but what does that mean? 
+\begin{itemize}
+\item \textbf{Version control} systems keep these revisions straight, storing the modifications in a central repository. This allows developers to easily collaborate, as they can download a new version of the software, make changes, and upload the newest revision. Every developer can see these new changes, download them, and contribute.
+\end{itemize}
+\end{block}
+
+\begin{block}{The \emph{Hub} in the GitHub}
+\item Git is a command-line tool, but the center around which all things involving Git revolve is the hub (\url{www.github.com}) where developers store their projects and network with like minded people.
+\end{block}
+\end{column}
+%2nd column
+\begin{column}{.33\textwidth}
+\begin{block}{GitHub Essentials}
+\begin{itemize}
+\item \textbf{Repository (Repo)}
+\begin{itemize}
+\item A repository is a location where all the files for a particular project are stored. Each project has its own repo, and you can access it with a unique URL.
+\end{itemize}
+\item \textbf{Forking a Repo}
+\begin{itemize}
+\item “Forking” is when you create a new project based off of another project that already exists. If you find a project on GitHub that you’d like to contribute to, you can fork the repo, make the changes you’d like, and release the revised project as a new repo. If the original repository that you forked to create your new project gets updated, you can easily add those updates to your current fork.
+\end{itemize}
+\item \textbf{Pull Request}
+\begin{itemize}
+\item The authors of the original repository can see your work by creating a pull request, and then choose whether or not to accept it into the official project. Whenever you issue a pull request, GitHub provides a perfect medium for you and the main project’s maintainer to communicate.
+\end{itemize}
+\end{itemize}
+\end{block}
+\end{column}
+%3rd column
+\begin{column}{.3\textwidth}
+\begin{block}{GitHub Essentials}
+\begin{itemize}
+    \item \textbf{Social Networking}
+    \begin{itemize}
+        \item The social networking aspect of GitHub is probably its most powerful feature, allowing projects to grow more than just about any of the other features offered. Each user on GitHub has their own profile that acts like a resume of sorts, showing your past work and contributions to other projects via pull requests.
+    \end{itemize}
+    \item \textbf{Changelogs}
+    \begin{itemize}
+        \item When multiple people collaborate on a project, it’s hard to keep track revisions—who changed what, when, and where those files are stored. GitHub takes care of this problem by keeping track of all the changes that have been pushed to the repository.
+    \end{itemize}
+\end{itemize}
+
+\end{block}
+
+\begin{center}
+\includegraphics[width=1\linewidth]{imagegit.png}
+\end{center}
+
+\end{column}
+\end{columns}
+
+\begin{block}{GitHub is not just for Developers}
+All this talk about how GitHub is ideal for programmers may have you believing that they are the only ones who will find it useful. Although it’s a lot less common, you can actually \textbf{use GitHub for any types of files}. If you have a team that is constantly making changes to a word document, for example,  you could use GitHub as your version control system.
+\end{block}
+
+
+\end{frame}
+\end{document}
